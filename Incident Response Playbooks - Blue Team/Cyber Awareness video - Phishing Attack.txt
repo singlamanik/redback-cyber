@@ -1,1 +1,45 @@
-https://youtu.be/f-sIfqk2MUw 
+Video Link- https://youtu.be/f-sIfqk2MUw 
+
+Detailed Breakdown of the Backend Processes in a Phishing Attack When Clicking a Malicious Link
+
+1.Introduction to Phishing Links
+
+1.1 Definition and Purpose
+- A phishing link is a URL designed to deceive users into clicking, leading them to a malicious website.
+- The primary purpose is to capture sensitive information or deliver malware.
+
+1.2 Common Disguises
+- Phishing links often appear in emails, text messages, social media posts, or fake advertisements.
+- They are crafted to look legitimate, often mimicking URLs of trusted websites.
+
+2. Scenario Demonstration
+
+2.1 Receiving a Phishing Email
+- The user receives an email from what seems to be a trusted source, such as a bank or online service.
+- The email contains a compelling reason for the user to click the link, like verifying their account information or claiming a prize.
+
+2.2 Clicking the Malicious Link
+- The user clicks on the link provided in the email.
+- This action initiates the backend processes that the video aims to explain.
+
+3. Backend Working of Clicking the Malicious Link
+
+3.1 Initial Connection to the Malicious Server
+Upon clicking the link, the user's browser sends a request to the URL specified in the link. The URL points to a server controlled by the attackers, often set up to log every incoming connection.
+
+3.2 Logging User Data
+The malicious server logs the user's IP address, browser type, operating system, and possibly other metadata. This information can be used to tailor future attacks or understand the demographics of the victim.
+
+3.3 Redirection or Display of Malicious Content
+The server may perform one of two actions:
+  - Direct Redirection: Redirect the user to a phishing website designed to mimic a legitimate site.
+  - Display Malicious Content: Directly display malicious content on the server itself, such as a fake login page.
+
+3.4 Fetching Resources
+The malicious page loads resources (HTML, CSS, JavaScript) that are often copies of the legitimate site. These resources are fetched from the attacker's server, ensuring that the fake page looks authentic.
+
+3.5 Capturing User Interaction
+As the user interacts with the page (e.g., clicking buttons, entering data), the site captures these interactions using scripts. For example, JavaScript can capture keystrokes, form submissions, and mouse clicks.
+
+3.6 Data Transmission to the Attacker
+When the user submits any form on the malicious page (e.g., login form), the data is sent back to the attacker's server. The transmission is often done via HTTP POST requests to a predefined endpoint on the attacker's server.
