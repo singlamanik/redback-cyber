@@ -59,7 +59,7 @@ handshake, the server's identity is authenticated, and an encrypted
 session is established. The client and server can then communicate
 securely with all data encrypted by the session keys.
 
-![](T2_2024/TLS for MQTT and CoAP/img/TLS_TLShandshake.png)
+![](img/TLS_TLShandshake.png)
 
 Mutual TLS, or mTLS as it is known, uses the same technology as TLS but
 instead of having a certificate installed only on the server side, it
