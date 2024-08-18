@@ -73,7 +73,7 @@ considered in future due to the data being transmitted and associated
 privacy responsibilities, but this is currently out of scope for the
 initial Proof of Concept and Implementation.
 
-![](img\TLS_mTLShandshake.png)
+![](img/TLS_mTLShandshake.png)
 
 ### Application of TLS Solution
 
@@ -127,12 +127,12 @@ is utilized by some project teams, with a proposal to adopt Dremio as a
 Data Lakehouse. Here is an overview of current Project 1 related
 architecture:
 
-![](img\TLS_P1Architecture.png)
+![](img/TLS_P1Architecture.png)
 
 Overview of broader proposed architecture including additional provision
 of services such as web server, API and NTP server:
 
-![](img\TLS_RedbackArchitecture.png)
+![](img/TLS_RedbackArchitecture.png)
 
 It has been recognized that the data Redback Operations is handling
 requires protection as it is sensitive and protected by the Privacy Act.
@@ -144,7 +144,7 @@ data leakage or breach.
 
 **MQTT Architecture**
 
-![](img\TLS_MQTTArch.png)
+![](img/TLS_MQTTArch.png)
 
 Central to an MQTT architecture is the MQTT Broker. There are several
 MQTT Brokers available for implementation, Redback Operations currently
@@ -189,7 +189,7 @@ to the associated topic.
 
 **CoAP Architecture (proposed only)**
 
-![](img\TLS_CoAPArch.png)
+![](img/TLS_CoAPArch.png)
 
 CoAP is a protocol
 that has many similarities to HTTP, which makes it easy to implement for
@@ -279,7 +279,7 @@ application of CoAP.
 
 ### Architecture - MQTT
 
-![](img\TLS_MQTTArchwTLS.png)
+![](img/TLS_MQTTArchwTLS.png)
 
 To implement a TLS solution for an MQTT architecture we need to install
 a certificate on the MQTT Broker. We have reviewed the use of Let's
@@ -496,7 +496,7 @@ will need to be tested and validated.
 
 ### Architecture - CoAP
 
-![](img\TLS_CoAPArchwDTLS.png)
+![](img/TLS_CoAPArchwDTLS.png)
 
 In the
 case of CoAP we need to issue and install ECDSA certificates onto the
