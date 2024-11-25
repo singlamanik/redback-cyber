@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - name: Get IP
-    run: |
-      ip addr | grep "inet " 
+      run: |
+        ip addr | grep "inet " 
      
