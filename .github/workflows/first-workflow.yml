@@ -14,5 +14,4 @@ jobs:
     steps:
     - name: Get IP
       run: |
-        ip addr | grep "inet " 
-     
+        ip addr | grep "inet "
