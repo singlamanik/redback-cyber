@@ -48,7 +48,7 @@ catch {
 }
 
 foreach ($member in $preferences.Keys) {
-    if ($preferences[$member] -eq $thisRepo) {
+    if ($preferences[$member] -contains $thisRepo) {
         $reviewer = $member
         break
     }
