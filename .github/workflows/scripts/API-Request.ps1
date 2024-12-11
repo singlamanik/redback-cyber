@@ -8,11 +8,27 @@
 #
 # --------------------------------------------------------- 
 
+<#
+.SYNOPSIS
+    Send HTTP POST reqeust to Azure DevOps API to create task.
+
+.DESCRIPTION
+    Creates a pull-request task in the SecDevOps Azure DevOps
+    team and assigns it to the passed in user.
+
+.PARAMETER User
+    Email address of user for task.
+
+.INPUTS
+    [string] - User as an email address.
+
+.EXAMPLE
+    $response = .\API-Request.ps1 -User name@emailHost.com
+#>
+
 param (
     [string]$User
 )
-
-Write-Host $User
  
 # URI Params
 $ORG =        "redbackoperations"
@@ -58,8 +74,14 @@ $headers = @{
     "Authorization" = "Bearer $PAT_TOKEN"
 }
 
-Invoke-RestMethod -Uri "https://dev.azure.com/$ORG/$PROJECT/_apis/wit/workitems/`$$($TYPE)?$API_VER" `
-                -Method Post `
-                -Headers $headers `
-                -Body $body `
-                -ContentType "application/json-patch+json"
+try {
+    Invoke-RestMethod -Uri "https://dev.azure.com/$ORG/$PROJECT/_apis/wit/workitems/`$$($TYPE)?$API_VER" `
+                    -Method Post `
+                    -Headers $headers `
+                    -Body $body `
+                    -ContentType "application/json-patch+json"
+}
+catch { 
+    Write-Error "Failed to make HTTP POST request."
+    exit 1
+}
