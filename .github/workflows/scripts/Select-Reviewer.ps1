@@ -1,11 +1,10 @@
-# ---------------------------------------------------------
-#   File:         Select-Reviewer.ps1
-#   Author:       Codey Funston [s222250824@deakin.edu.au]
-# 
-#   Description:  Based on repository preferences, selects 
-#                 a reviewer, or whole team if no matches.
-#
-# ---------------------------------------------------------
+#---------------------------------------------------------#
+#  File:         Select-Reviewer.ps1                      #
+#  Author:       Codey Funston [s222250824@deakin.edu.au] #
+#                                                         #
+#  Description:  Based on repository preferences, selects #
+#                a reviewer, or whole team if no matches. #
+#---------------------------------------------------------#
 
 <#
 .SYNOPSIS

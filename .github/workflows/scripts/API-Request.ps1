@@ -1,12 +1,11 @@
-# ---------------------------------------------------------
-#   File:         API-Request.ps1
-#   Author:       Codey Funston [s222250824@deakin.edu.au]
-# 
-#   Description:  Does an HTTP POST request to Azure
-#                 DevOps API. Uses task creation subset of
-#                 the API.
-#
-# --------------------------------------------------------- 
+#---------------------------------------------------------#
+#  File:         API-Request.ps1                          #
+#  Author:       Codey Funston [s222250824@deakin.edu.au] #
+#                                                         #
+#  Description:  Does an HTTP POST request to Azure       #
+#                DevOps API. Uses task creation subset of #
+#                the API.                                 #
+#---------------------------------------------------------#
 
 <#
 .SYNOPSIS
